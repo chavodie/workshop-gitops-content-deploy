@@ -2,13 +2,13 @@
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
-  name: day2-sno-<name>
+  name: day2-sno-12
   namespace: openshift-operators
 spec:
   generators:
   - git:
-      repoURL: https://github.com/<your_user>/workshop-gitops-content-deploy.git
-      revision: sno-<name>-setup
+      repoURL: https://github.com/chavodie/workshop-gitops-content-deploy.git
+      revision: sno-12-setup
       files:
       - path: "cluster-definition/**/cluster.json"
   template:

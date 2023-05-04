@@ -25,7 +25,11 @@ argocd:
   group: cluster-admins
 
 vault: 
+<<<<<<< HEAD
   vault_addr: "http://vault-vault.apps.argo-hub.sandbox2646.opentlc.com"
+=======
+  vault_addr: "http://vault-vault.apps.argo-hub.<subdomain>.opentlc.com"
+>>>>>>> main-day2
   avp_type: vault
   avp_auth_type: approle
   avp_role_id: 7fd49bf8-50e8-f6db-ca17-87d5bc1a338f
